@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project Title</title> <!-- Change the title for each project -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Project description goes here.">
+  <meta name="keywords" content="project, details, technologies">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Custom styles for the project page */
+    .project-details {
+      padding: 20px;
+      text-align: center;
+    }
+    .project-details img {
+      max-width: 100%;
+      height: auto; /* Ensures the image is responsive */
+      margin: 20px 0; /* Adds space around the image */
+    }
+    .project-description {
+      margin-bottom: 20px; /* Space below the description */
+    }
+    .project-button {
+  position: relative;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #294ddd; /* Blue color */
+  color: white; /* Text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-button:hover {
+  background-color: #1500ff; /* Darker shade of blue on hover */
+}
+
+.btn-background {
+  position: absolute;
+  top: 0;
+  left: 23px;
+  right: 0;
+  height: 100%;
+  background-color: #254ded; /* Blue color */
+  z-index: -1;
+  transition: left .2s ease-in-out;
+}
+
+.project-button svg {
+  position: relative;
+  left: 5px;
+  width: 15px;
+  fill: #ffffff; /* Button icon color */
+}
+    
+    .project-button svg {
+      position: relative;
+      left: 5px;
+      width: 15px;
+      fill: #ffffff; /* Button icon color */
+    }
+  </style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="index.html">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Global</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container">
+    <div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Belkhir Djihad ElHak</p>
+          </a>
+        </header>
+
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="project-details">
+              <h1 style="font-size: 30px;">AutoCare</h1>
+              <p class="project-description"><strong>Description:</strong> AutoCare is a user-friendly platform designed to streamline automotive repair and maintenance services. <br>It allows users to schedule appointments, track vehicle health, and access expert advice,<br> ensuring convenience, reliability, and quality service for car owners.</p>
+              <p><strong>Technologies Used: Backend</strong> : Python, Django, MySQL, JWT auth, google SMTP, REST Api<Br>
+              <strong>Frontend</strong> : HTML, CSS, JavaScript, React, tailwind</p>
+              
+              <!-- Responsive Image -->
+              <center><img class="intro-image" src="assets/img/autocare.png" alt="Welcome" width="450" height="450"></center>
+
+              <!-- View Project Button -->
+              <button class="project-button">View Project
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                </svg>
+                <span class="btn-background"></span>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
